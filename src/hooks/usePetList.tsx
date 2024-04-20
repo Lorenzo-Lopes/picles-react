@@ -12,7 +12,7 @@ export function UsePetList(urlParams:GetPetsRequest): IUseList{
     const { data, isLoading } = useQuery({
         queryKey: ["get-pets", urlParams],
         queryFn: () => getPets(urlParams),
-        // scaleTime:1*60*1000,
+        
     })
     return {data,isLoading}
 }
