@@ -1,4 +1,4 @@
-import { Button, ButtonVatiant } from "../../components/common/Button";
+import { Button, ButtonVariant } from "../../components/common/Button";
 
 import styles from './Home.module.css'
 import dog from './../../assets/dog.svg'
@@ -9,10 +9,10 @@ export function Home(){
         <img src={dog} width="278.2px"/>
 
         <Link to="/pets">
-          <Button variant={ButtonVatiant.Default}>Quero Adotar</Button>
+          <Button variant={ButtonVariant.Default}>Quero Adotar</Button>
         </Link>
         <Link to="/admin">
-          <Button variant={ButtonVatiant.Outlined}>Tenho um Abrigo</Button>
+          <Button variant={ButtonVariant.Outlined}>Tenho um Abrigo</Button>
         </Link>
       </div>
     );

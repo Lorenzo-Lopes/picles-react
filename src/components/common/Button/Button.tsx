@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
-import { ButtonVatiant } from "./Button.constants";
+import { ButtonVariant } from "./Button.constants";
 import styles from "./Button.module.css";
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,19 +7,19 @@ interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({
-  variant = ButtonVatiant.Default,
+  variant = ButtonVariant.Default,
   children,
   ...rest
 }: IButton) {
   let buttonClass = styles.buttonBase;
   switch (variant) {
-    case ButtonVatiant.Default:
+    case ButtonVariant.Default:
       buttonClass += ` ${styles.buttonDefault}`;
       break;
-    case ButtonVatiant.Outlined:
+    case ButtonVariant.Outlined:
       buttonClass += ` ${styles.buttonOutlined}`;
       break;
-    case ButtonVatiant.Text:
+    case ButtonVariant.Text:
       buttonClass += ` ${styles.buttonText}`;
       break;
   }
