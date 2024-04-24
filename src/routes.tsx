@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/admin/pets",
-        element:<AuthHOC/>,
+        element:<AuthHOC />,
         children: [
           {
             index: true,

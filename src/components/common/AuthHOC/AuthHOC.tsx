@@ -10,6 +10,6 @@ export function AuthHOC(){
     if(!canAccess) return <Navigate to='/admin'/>
 
     return(
-        <Outlet/>
+        <Outlet />
     )
 }
