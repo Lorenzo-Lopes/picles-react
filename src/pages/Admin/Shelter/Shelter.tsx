@@ -1,9 +1,7 @@
 import { Panel } from "../../../components/layout/Panel";
 
-export function PetList(){
+export function Shelter(){
     return(
-        <Panel >
-            Pets
-        </Panel>
+        <Panel> </Panel>
     )
 }
